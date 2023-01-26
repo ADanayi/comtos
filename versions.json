@@ -1,0 +1,13 @@
+{
+    "v1": {
+        "v1.f": ["Comtos Core and implementation for being ran on ESP32 and Arduino, easily"]
+    },
+    "v2": {
+        "v2.0": [
+            "Added versions.json file!",
+            "Time violation watching system should be optional",
+            "Added manual usage support",
+            "Added Finterval (Fast interval from function)"
+        ]
+    }
+}
