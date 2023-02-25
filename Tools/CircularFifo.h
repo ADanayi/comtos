@@ -3,6 +3,8 @@
 #ifndef __COMTOS_CIRC_BUF_FLAG_H
 #define __COMTOS_CIRC_BUF_FLAG_H
 
+#include <cstddef>
+
 namespace comtos
 {
     namespace tools
