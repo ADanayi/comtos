@@ -156,7 +156,7 @@ namespace comtos
 
             if ((ticResult == runnableTicResultT::continue_me) || (ticResult == runnableTicResultT::reschedule_me))
             {
-                this->__state == runnableStateT::scheduled;
+                this->__state = runnableStateT::scheduled;
             }
             else
             {

@@ -214,7 +214,7 @@ namespace comtos
         for (ridT rid = 0; rid < _COMT_MAX_RUNNABLES; rid++)
         {
             cursor = rtable[rid];
-            if (cursor != nullptr & cursor != R)
+            if (cursor != nullptr && cursor != R)
             {
                 if (cursor->on_polling_request(R) != requestResultT::accepted)
                     return requestResultT::declined;
@@ -298,7 +298,7 @@ namespace comtos
         }
         else
         {
-            if (has_space & R != nullptr)
+            if ((has_space) && (R != nullptr))
             {
                 on_schedule_request_accepted(R);
                 rtable[empty_rid] = R;
@@ -332,7 +332,7 @@ namespace comtos
         if (rid == _COMT_MAX_RUNNABLES)
         {
             R->__state = runnableStateT::terminated;
-            terminateResultT::terminated;
+            return terminateResultT::terminated;
         };
         __terminate_runnable(rid);
         return terminateResultT::terminated;
@@ -367,7 +367,7 @@ namespace comtos
         existing = false;
         for (ridT rid = 0; rid < _COMT_MAX_RUNNABLES; rid++)
         {
-            if ((rtable[rid] == nullptr) & !has_space)
+            if ((rtable[rid] == nullptr) && !has_space)
             {
                 has_space = true;
                 first_empty_rid = rid;

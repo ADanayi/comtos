@@ -20,8 +20,8 @@ namespace comtos
             using FlagTimeout::move_to_core;
 
         private:
-            const ticT T_risk;
             const unsigned int N_risk;
+            const ticT T_risk;
             unsigned int n;
         };
     };
