@@ -24,6 +24,7 @@ namespace comtos
     void CoreBase::on_schedule_request(Runnable *R) { return; };
     void CoreBase::on_schedule_request_accepted(Runnable *R){};
     void CoreBase::on_loop_iterated(){};
+    void CoreBase::on_cursor_iterated(){};
     void CoreBase::on_main_loop_started(){};
     void CoreBase::on_main_loop_finished(){};
 
@@ -142,6 +143,7 @@ namespace comtos
             cursor = rtable[rid];
             if (cursor != nullptr)
             {
+                on_cursor_iterated();
                 finish = false;
                 if (cursor->__priority < __wpriority)
                     continue;

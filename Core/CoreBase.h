@@ -68,6 +68,7 @@ namespace comtos
         virtual void on_main_loop_started();
         virtual void on_main_loop_finished();
         virtual void on_loop_iterated();
+        virtual void on_cursor_iterated();
 
         Runnable *__cursor;
         Runnable *__polling_runnable;

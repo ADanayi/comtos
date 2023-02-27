@@ -1,9 +1,13 @@
 {
-    "current": "v2.1r",
+    "current": "v2.2d",
     "todo": [
-
+        "For now ESP32Comtos's watchdog reset mechanism is not good!"
     ],
     "v2": {
+        "v2.2d": [
+            "Added ESP32Comtos (IDF version), Thanks Allah!",
+            "Added on_cursor_iterated, Thanks Allah!"
+        ],
         "v2.1r": [
             "Included cstddef in CircularBuffer.h",
             "Fixed a bug in Runnable.cpp:159, Thanks Allah",
